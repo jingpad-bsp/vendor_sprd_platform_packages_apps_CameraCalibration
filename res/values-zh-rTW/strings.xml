@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">相機標定與驗證工具</string>
+
+    <string name="TestResultTitleString">測試結果</string>
+    <string name="TestResultTitleStringFail">測試結果(失败)</string>
+
+
+  <string name="camera_test_title">相機測試</string>
+
+
+
+    <string name="camera_test">相機測試</string>
+
+    <string name="front_camera_title_text">前相機測試</string>
+    <string name="back_camera_title_text">後相機測試</string>
+    <string name="camera_failue">相機測試失敗！</string>
+    <string name="camera_pass">相機測試成功！</string>
+    <string name="take_picture">獲取圖片</string>
+    <string name="preview">瀏覽</string>
+    <string name="text_pass">通過</string>
+    <string name="text_fail">失敗</string>
+    <string name="text_na">未測試</string>
+    <string name="text_retry">重試</string>
+    <string name="text_change_camera">切換攝像頭</string>
+    <string name="text_pass_msg">通過</string>
+
+    <string name="test_result_case_title">測試項</string>
+    <string name="test_result_result_title">結果</string>
+    <string name="back_camera_test">相機測試</string>
+    <string name="front_camera_test">相機測試</string>
+    <string name="test_case_name">測試項</string>
+    <string name="test_case_result">測試結果</string>
+    <string name="light_msg_text">注意閃光燈以及屏幕畫面</string>
+    <string name="camera_test_result_check">是否正常顯示相機畫面並且閃光燈常亮？</string>
+    <string name="font_msg_text">前攝像頭是否打開？</string>
+
+    <string name="alert_dialog_title">請檢查結果</string>
+    <string name="alert_dialog_test">是 - 通過\n否 - 失敗\n或 按BACK鍵重試</string>
+    <string name="alert_finish_test">是否忽略現象而通過？</string>
+
+    <string name="reset">恢復出廠設定</string>
+    <string name="has_camera_title">"你的手機是否有拍照鍵？"</string>
+    <string name="has_camera_key">"有"</string>
+	<string name="no_camera_key">"無"</string>
+
+    <string name="multi_user_hint">當前爲多用戶模式,不可以進行工厂測試!</string>
+
+
+
+    <string name="factory_reset_message">該操作將會恢復出廠設置，是否繼續?</string>
+
+    <string name="face_msg_text">為保證拍攝效果，請勿遮擋鏡頭.</string>
+
+  <string name="camera_calibration_v1">3塊板</string>
+  <string name="camera_calibration_v2">4塊板</string>
+
+  <string name="camera_calibration_test">虛化標定</string>
+  <string name="camera_verification_test">虚化驗證</string>
+  <string name="spw_camera_calibration_test">超廣角標定</string>
+  <string name="spw_camera_verification_test">超廣角驗證</string>
+
+  <string name="zoom_stage1">光學變焦一段</string>
+  <string name="zoom_stage2">光學變焦二段</string>
+
+  <string name="zoom_calibration_test">光學變焦標定</string>
+  <string name="zoom_verification_test">光學變焦驗證</string>
+
+  <string name="stl3d_camera_calibration_test">結構光標定</string>
+  <string name="stl3d_camera_verification_test">結構光驗證</string>
+
+
+</resources>

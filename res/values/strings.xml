@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">CameraCalibration</string>
+
+    <string name="TestResultTitleString">Factory Test Result</string>
+    <string name="TestResultTitleStringFail">Factory Test Result(Fail)</string>
+
+    <string name="camera_test_title">Camera</string>
+
+    <string name="camera_test">Camera test</string>
+
+    <!-- Camera test -->
+    <string name="front_camera_title_text">Front Camera Test</string>
+    <string name="back_camera_title_text">Back Camera Test</string>
+    <string name="camera_failue">The camera test fails!</string>
+    <string name="camera_pass">The camera test passes!</string>
+    <string name="take_picture">Take picture</string>
+    <string name="preview">Preview</string>
+    <string name="text_pass">Pass</string>
+    <string name="text_fail">Fail</string>
+    <string name="text_na">Not test</string>
+    <string name="text_change_camera">Change Camera</string>
+    <string name="text_pass_msg">PASS</string>
+    <string name="test_result_ID_title">ID</string>
+    <string name="test_result_case_title">Test Case</string>
+    <string name="test_result_result_title">Result</string>
+    <string name="back_camera_test">Back camera test</string>
+    <string name="front_camera_test">Front camera test</string>
+    <string name="test_case_name">Test case</string>
+    <string name="test_case_result">Test result</string>
+    <string name="can_not_pass">Can not pass</string>
+
+    <string name="camera_test_result_check">Whether displayed the camera screen and flash(if exist)?</string>
+
+    <string name="title_activity_camera_tools_main">Camera test</string>
+    <string name="alert_dialog_title">Please check the result</string>
+    <string name="alert_dialog_test">Yes - Pass\nNo - Fail\nOr press BACK for retry</string>
+    <string name="alert_finish_test">Pass the test anyway?</string>
+
+    <string name="test_info_phase_check">PHASE  CHECK</string>
+
+    <string name="font_msg_text">Open Front camera?</string>
+    <string name="text_retry">Retry</string>
+    <string name="reset">Reset</string>
+    <string name="has_camera_title">Is there a snapshot key on your phone?</string>
+    <string name="has_camera_key">Yes</string>
+    <string name="no_camera_key">No</string>
+
+    <string name="start_retest">Retest the fail items</string>
+    <string name="light_msg_text">Notice the flash is opened？</string>
+    <string name="fm_not_power_up">Not power up</string>
+    <string name="multi_user_hint">The current is multi-user mode, can not factory testing!</string>
+
+
+    <string name="front_camera_fail_tips">Front camera test fail</string>
+    <string name="back_camera_fail_tips">Bront camera test fail</string>
+
+
+    <string name="secondary_camera_title_text">Secondary Camera Test</string>
+    <string name="secondary_camera_fail_tips">Secondary camera test fail</string>
+    <string name="secondary_msg_text">Open Secondary camera?</string>
+
+
+    <string name="factory_reset_message">This oprate will erase phone data!</string>
+
+
+    <string name="front_camera_verification_test">Front dual camera verification test</string>
+
+    <string name="camera_3d_calibration_left">left</string>
+    <string name="camera_spw_calibration">Ultrawide calibration</string>
+    <string name="camera_3d_calibration_right">right</string>
+    <string name="camera_3d_calibration_name">3D Calibration</string>
+    <string name="camera3_title_text">Front Secondary Camera Test</string>
+    <string name="camera3_fail_tips">front secondary camera test fail</string>
+    <string name="camera3_msg_text">open front secondary camera?</string>
+
+
+    <string name="front_secondary_camera_title_text">Front Secondary Camera Test</string>
+    <string name="front_secondary_msg_text">Open Front Secondary camera?</string>
+
+
+    <string name="face_msg_text">Please don\'t block the lens to ensure the picture effect!</string>
+
+
+    <!--Camera calibration test -->
+    <string name="camera_calibration_test">Bokeh Calibration</string>
+    <string name="camera_verification_test">Bokeh Verification</string>
+    <string name="spw_camera_calibration_test">Ultrawide Calibration</string>
+    <string name="spw_camera_verification_test">Ultrawide Verification</string>
+
+    <string name="zoom_calibration_test">OpticsZoom Calibration</string>
+    <string name="zoom_verification_test">OpticsZoom Verification</string>
+    <string name="angle_symbol">°</string>
+
+    <string name="zoom_stage1">OpticsZoom Stage 1</string>
+    <string name="zoom_stage2">OpticsZoom Stage 2</string>
+
+    <string name="stl3d_camera_calibration_test">STL3D Calibration</string>
+    <string name="stl3d_camera_verification_test">STL3D Verification</string>
+
+    <!--Add camera cali after sales -->
+    <string name="camera_calibration_preview_text">Please take picture directly facing the chart board.</string>
+    <string name="camera_calibration_turn_left_text">Please turn the phone to left by 40 degrees.</string>
+    <string name="camera_calibration_turn_right_text">Please turn the phone to right by 40 degrees.</string>
+    <string name="camera_calibration_start_preview_text">Start preview</string>
+
+    <string name="camera_calibration_v1">3 Boards</string>
+    <string name="camera_calibration_v2">4 Boards</string>
+    <string name="camera_calibration_aftersales_v1">Solution A \n (Modules can’t be replaced)</string>
+    <string name="camera_calibration_aftersales_v2">Solution B \n (Modules can be replaced)</string>
+    <string name="camera_calibration_aftersales_diaglog_text">Solution A is not supported,please use Solution B.</string>
+    <string name="back_third_camera_title_text">Back Third Camera Test</string>
+</resources>

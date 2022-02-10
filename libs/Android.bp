@@ -1,0 +1,232 @@
+//prebuilt libCameraCalibration.so
+cc_prebuilt_library_shared {
+    name: "libCameraCalibration",
+    vendor_available: true,
+    product_specific: true,
+	arch: {
+        arm: {
+            srcs: ["armeabi-v7a/libCameraCalibration.so"],
+        },
+        arm64: {
+            srcs: ["arm64-v8a/libCameraCalibration.so"],
+        },
+        x86: {
+            srcs: ["x86/libCameraCalibration.so"],
+        },
+        x86_64: {
+            srcs: ["x86_64/libCameraCalibration.so"],
+        },
+    },
+}
+//prebuilt libopencv_java3.so
+cc_prebuilt_library_shared {
+    name: "libopencv_java3",
+    vendor_available: true,
+    product_specific: true,
+	arch: {
+        arm: {
+            srcs: ["armeabi-v7a/libopencv_java3.so"],
+        },
+        arm64: {
+            srcs: ["arm64-v8a/libopencv_java3.so"],
+        },
+        x86: {
+            srcs: ["x86/libopencv_java3.so"],
+        },
+        x86_64: {
+            srcs: ["x86_64/libopencv_java3.so"],
+        },
+    },
+}
+//prebuilt libCameraVerfication.so
+cc_prebuilt_library_shared {
+    name: "libCameraVerfication",
+    vendor_available: true,
+    product_specific: true,
+	arch: {
+        arm: {
+            srcs: ["armeabi-v7a/libCameraVerfication.so"],
+        },
+        arm64: {
+            srcs: ["arm64-v8a/libCameraVerfication.so"],
+        },
+        x86: {
+            srcs: ["x86/libCameraVerfication.so"],
+        },
+        x86_64: {
+            srcs: ["x86_64/libCameraVerfication.so"],
+        },
+    },
+}
+//prebuilt libSaleAfterCali.so
+cc_prebuilt_library_shared {
+    name: "libSaleAfterCali",
+    vendor_available: true,
+    product_specific: true,
+	arch: {
+        arm: {
+            srcs: ["armeabi-v7a/libSaleAfterCali.so"],
+        },
+        arm64: {
+            srcs: ["arm64-v8a/libSaleAfterCali.so"],
+        },
+        x86: {
+            srcs: ["x86/libSaleAfterCali.so"],
+        },
+        x86_64: {
+            srcs: ["x86_64/libSaleAfterCali.so"],
+        },
+    },
+}
+//prebuilt libsprd_yuvscaler.so
+cc_prebuilt_library_shared {
+    name: "libsprd_yuvscaler",
+    vendor_available: true,
+    product_specific: true,
+	arch: {
+        arm: {
+            srcs: ["armeabi-v7a/libsprd_yuvscaler.so"],
+        },
+        arm64: {
+            srcs: ["arm64-v8a/libsprd_yuvscaler.so"],
+        },
+        x86: {
+            srcs: ["x86/libsprd_yuvscaler.so"],
+        },
+        x86_64: {
+            srcs: ["x86_64/libsprd_yuvscaler.so"],
+        },
+    },
+}
+
+//prebuilt libSpwCameraCalibration.so
+cc_prebuilt_library_shared {
+    name: "libSpwCameraCalibration",
+    vendor_available: true,
+    product_specific: true,
+	arch: {
+        arm: {
+            srcs: ["armeabi-v7a/libSpwCameraCalibration.so"],
+        },
+        arm64: {
+            srcs: ["arm64-v8a/libSpwCameraCalibration.so"],
+        },
+        x86: {
+            srcs: ["x86/libSpwCameraCalibration.so"],
+        },
+        x86_64: {
+            srcs: ["x86_64/libSpwCameraCalibration.so"],
+        },
+    },
+}
+
+//prebuilt libSpwCameraVerification.so
+cc_prebuilt_library_shared {
+    name: "libSpwCameraVerification",
+    vendor_available: true,
+    product_specific: true,
+	arch: {
+        arm: {
+            srcs: ["armeabi-v7a/libSpwCameraVerification.so"],
+        },
+        arm64: {
+            srcs: ["arm64-v8a/libSpwCameraVerification.so"],
+        },
+        x86: {
+            srcs: ["x86/libSpwCameraVerification.so"],
+        },
+        x86_64: {
+            srcs: ["x86_64/libSpwCameraVerification.so"],
+        },
+    },
+}
+
+//prebuilt libWTCameraCalibration.so
+cc_prebuilt_library_shared {
+    name: "libWTCameraCalibration",
+    vendor_available: true,
+    product_specific: true,
+	arch: {
+        arm: {
+            srcs: ["armeabi-v7a/libWTCameraCalibration.so"],
+        },
+        arm64: {
+            srcs: ["arm64-v8a/libWTCameraCalibration.so"],
+        },
+        x86: {
+            srcs: ["x86/libWTCameraCalibration.so"],
+        },
+        x86_64: {
+            srcs: ["x86_64/libWTCameraCalibration.so"],
+        },
+    },
+}
+
+
+//prebuilt libWTCameraVerification.so
+cc_prebuilt_library_shared {
+    name: "libWTCameraVerification",
+    vendor_available: true,
+    product_specific: true,
+	arch: {
+        arm: {
+            srcs: ["armeabi-v7a/libWTCameraVerification.so"],
+        },
+        arm64: {
+            srcs: ["arm64-v8a/libWTCameraVerification.so"],
+        },
+        x86: {
+            srcs: ["x86/libWTCameraVerification.so"],
+        },
+        x86_64: {
+            srcs: ["x86_64/libWTCameraVerification.so"],
+        },
+    },
+}
+
+//prebuilt libcalibration3d.so
+cc_prebuilt_library_shared {
+    name: "libcalibration3d",
+    vendor_available: true,
+    product_specific: true,
+	arch: {
+        arm: {
+            srcs: ["armeabi-v7a/libcalibration3d.so"],
+        },
+        arm64: {
+            srcs: ["arm64-v8a/libcalibration3d.so"],
+        },
+        x86: {
+            srcs: ["x86/libcalibration3d.so"],
+        },
+        x86_64: {
+            srcs: ["x86_64/libcalibration3d.so"],
+        },
+    },
+}
+
+//prebuilt libCameraVerfication3d.so
+cc_prebuilt_library_shared {
+    name: "libCameraVerfication3d",
+    vendor_available: true,
+    product_specific: true,
+	arch: {
+        arm: {
+            srcs: ["armeabi-v7a/libCameraVerfication3d.so"],
+        },
+        arm64: {
+            srcs: ["arm64-v8a/libCameraVerfication3d.so"],
+        },
+        x86: {
+            srcs: ["x86/libCameraVerfication3d.so"],
+        },
+        x86_64: {
+            srcs: ["x86_64/libCameraVerfication3d.so"],
+        },
+    },
+}
+//prebuilt glframe.jar
+java_import {
+    name: "glframe_jar",
+    jars: ["glframe.jar"],
+}

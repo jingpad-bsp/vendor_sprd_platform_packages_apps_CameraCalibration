@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sprd.cameracalibration"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_FM_RADIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_ROUTING" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.ACCESS_BROADCAST_RADIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.permission.SAVE_PHASECHECK"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:directBootAware="true">
+        <!--<uses-library android:name="com.broadcom.bt" />-->
+        <receiver android:name="com.sprd.cameracalibration.CameraToolsBroadcastReceiver"
+            android:directBootAware="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+
+                <data
+                    android:host="83788"
+                    android:scheme="android_secret_code" />
+            </intent-filter>
+            <!-- dualcamera calibrantion after sales support start end. -->
+        </receiver>
+        <activity
+            android:name="com.sprd.cameracalibration.ListItemTestActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|mnc|mcc"
+            android:label="@string/title_activity_camera_tools_main"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@android:style/Theme.Black" >
+
+            <intent-filter>
+                <action android:name="com.sprd.cameracalibration.START_CAMERACALIBRATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- Camera begin -->
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.CameraCalibrationVCMActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/camera_calibration_test"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.CameraCalibrationResultActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.CameraVerificationVCMActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/camera_verification_test"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!-- FIXE:Add for CameraCalibration after sales -->
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.CameraCalibrationAftersalesActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.CameraCalibrationAftersales2Activity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.CameraCaliAfterSalesSelectActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/camera_calibration_test"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.CameraCalibrationVSelectActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/camera_calibration_test"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.CameraSPWVerificationActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/spw_camera_verification_test"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.CameraSPWCalibrationActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/spw_camera_calibration_test"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.CameraWTCalibrationActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/camera_verification_test"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.CameraWTVerificationActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/camera_verification_test"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.ZoomCalibrationActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/zoom_calibration_test"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.ZoomVerificationActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/zoom_verification_test"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.ZoomCalibrationResultActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.CameraSTL3DVerificationActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/stl3d_camera_verification_test"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.sprd.cameracalibration.itemstest.camera.CameraSTL3DCalibrationActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/stl3d_camera_calibration_test"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <!-- Camera end -->
+
+    </application>
+
+</manifest>

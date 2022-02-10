@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">相机标定与验证工具</string>
+
+    <string name="TestResultTitleString">测试结果</string>
+    <string name="TestResultTitleStringFail">测试结果(失败)</string>
+
+    <string name="display_test_title">屏幕测试</string>
+
+    <string name="camera_test_title">相机测试</string>
+
+    <string name="camera_test">照相机测试</string>
+    <string name="front_camera_title_text">前相机测试</string>
+    <string name="back_camera_title_text">后相机测试</string>
+    <string name="camera_failue">相机测试失败！</string>
+    <string name="camera_pass">相机测试成功！</string>
+    <string name="take_picture">获取图片</string>
+    <string name="preview">浏览</string>
+    <string name="text_pass">通过</string>
+    <string name="text_fail">失败</string>
+    <string name="text_na">未测试</string>
+    <string name="text_retry">重试</string>
+    <string name="text_change_camera">切换摄像头</string>
+    <string name="text_pass_msg">通过</string>
+    <string name="test_result_ID_title">ID</string>
+    <string name="test_result_case_title">测试项</string>
+    <string name="test_result_result_title">结果</string>
+    <string name="back_camera_test">相机测试</string>
+    <string name="front_camera_test">相机测试</string>
+    <string name="test_case_name">测试项</string>
+    <string name="test_case_result">测试结果</string>
+
+    <string name="light_msg_text">注意闪光灯以及屏幕画面</string>
+    <string name="camera_test_result_check">是否正常显示相机画面并且闪光灯(若存在)常亮？</string>
+    <string name="font_msg_text">前摄像头是否打开？</string>
+
+
+    <string name="can_not_pass">不可通过</string>
+
+    <string name="alert_dialog_title">请检查结果</string>
+    <string name="alert_dialog_test">是 - 通过\n否 - 失败\n或 按BACK键重试</string>
+    <string name="alert_finish_test">是否忽略现象而通过？</string>
+
+    <string name="reset">恢复出厂设置</string>
+    <string name="has_camera_title">"你的手机是否有拍照键？"</string>
+    <string name="has_camera_key">"有"</string>
+	<string name="no_camera_key">"没有"</string>
+
+    <string name="bg_test_notice">后台测试结果，失败项将会重新测试!</string>
+    <string name="start_retest">重新测试失败的项目</string>
+
+    <string name="front_camera_fail_tips">前相机测试失败</string>
+    <string name="back_camera_fail_tips">后相机测试失败</string>
+
+
+    <string name="secondary_camera_title_text">后置辅相机测试</string>
+    <string name="secondary_camera_fail_tips">后置辅相机测试失败</string>
+    <string name="secondary_msg_text">后置辅相机是否打开?</string>
+
+
+    <string name="factory_reset_message">该操作将会恢复出厂设置，是否继续?</string>
+
+
+    <string name="front_camera_verification_test">前置Camera 双摄校准测试</string>
+
+    <string name="front_secondary_camera_title_text">前置辅相机测试</string>
+    <string name="front_secondary_msg_text">前置辅相机是否打开?</string>
+
+    <string name="face_msg_text">为保证拍摄效果，请勿遮挡镜头.</string>
+
+    <!--Camera calibration test -->
+    <string name="camera_calibration_test">虚化标定</string>
+    <string name="camera_verification_test">虚化验证</string>
+    <string name="spw_camera_calibration_test">超广角标定</string>
+    <string name="spw_camera_verification_test">超广角验证</string>
+
+    <string name="zoom_calibration_test">光学变焦标定</string>
+    <string name="zoom_verification_test">光学变焦验证</string>
+    <string name="angle_symbol">°</string>
+
+    <string name="zoom_stage1">光学变焦一段</string>
+    <string name="zoom_stage2">光学变焦二段</string>
+
+    <string name="stl3d_camera_calibration_test">结构光标定</string>
+    <string name="stl3d_camera_verification_test">结构光验证</string>
+
+    <!--Add camera cali after sales -->
+    <string name="camera_calibration_preview_text">请用手机正对标定板拍照</string>
+    <string name="camera_calibration_turn_left_text">请转动手机向左转40度</string>
+    <string name="camera_calibration_turn_right_text">请转动手机向右转40度</string>
+    <string name="camera_calibration_start_preview_text">开始预览</string>
+    <string name="camera_calibration_v1">3块板</string>
+    <string name="camera_calibration_v2">4块板</string>
+    <string name="camera_calibration_aftersales_v1">A方案\n(模组不可更换)</string>
+    <string name="camera_calibration_aftersales_v2">B方案\n(模组可更换)</string>
+    <string name="camera_calibration_aftersales_diaglog_text">不支持A方案,请使用B方案</string>
+    <string name="back_third_camera_title_text">后置三摄相机测试</string>
+</resources>

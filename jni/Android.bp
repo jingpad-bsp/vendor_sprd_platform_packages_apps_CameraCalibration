@@ -1,0 +1,331 @@
+cc_library_shared {
+    name: "libjni_dualcameraverify",
+    compile_multilib: "first",
+    product_specific: true,
+    srcs: [
+        "src/jniDualcameraVrify.cpp",
+        "src/ImageFormat_Conversion.c",
+        "src/ReadCalibParam.c",
+    ],
+    local_include_dirs: [
+        "src/header",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libCameraVerfication",
+        "libopencv_java3",
+    ],
+    cflags: [
+        "-O3",
+        "-fvisibility=hidden",
+        "-mfloat-abi=softfp",
+        "-mfpu=neon",
+        "-pie",
+        "-fPIE",
+        "-DNDK",
+    ],
+    cppflags: [
+        "-fexceptions",
+    ],
+    ldflags: [
+        "-Wl,--gc-sections",
+        "-Wl,--strip-debug",
+        "-Wl,--no-fatal-warnings",
+        "-fvisibility=hidden",
+        "-fuse-ld=lld",
+    ],
+}
+
+cc_library_shared {
+    name: "libjni_dualcameracalibration",
+    compile_multilib: "first",
+    product_specific: true,
+    srcs: [
+        "src/jniDualcameraCalibration.cpp",
+        "src/ImageFormat_Conversion.c",
+        "src/ReadCalibParam.c",
+    ],
+    local_include_dirs: [
+        "src/header",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libCameraCalibration",
+        "libSaleAfterCali",
+        "libopencv_java3",
+        "libsprd_yuvscaler",
+    ],
+    cflags: [
+        "-O3",
+        "-fvisibility=hidden",
+        "-mfloat-abi=softfp",
+        "-mfpu=neon",
+        "-pie",
+        "-fPIE",
+        "-DNDK",
+    ],
+    cppflags: [
+        "-fexceptions",
+    ],
+    ldflags: [
+        "-Wl,--gc-sections",
+        "-Wl,--strip-debug",
+        "-Wl,--no-fatal-warnings",
+        "-fvisibility=hidden",
+        "-fuse-ld=lld",
+    ],
+}
+
+//spw calibration
+cc_library_shared {
+    name: "libjni_spwcameracalibration",
+    compile_multilib: "first",
+    product_specific: true,
+    srcs: [
+        "src/jniSpwCameraCalibration.cpp",
+        "src/ImageFormat_Conversion.c",
+        "src/ReadCalibParam.c",
+    ],
+    local_include_dirs: [
+        "src/header",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libSpwCameraCalibration",
+        "libopencv_java3",
+        "libsprd_yuvscaler",
+    ],
+    cflags: [
+        "-O3",
+        "-fvisibility=hidden",
+        "-mfloat-abi=softfp",
+        "-mfpu=neon",
+        "-pie",
+        "-fPIE",
+        "-DNDK",
+    ],
+    cppflags: [
+        "-fexceptions",
+    ],
+    ldflags: [
+        "-Wl,--gc-sections",
+        "-Wl,--strip-debug",
+        "-Wl,--no-fatal-warnings",
+        "-fvisibility=hidden",
+        "-fuse-ld=lld",
+    ],
+}
+
+//spw verification
+cc_library_shared {
+    name: "libjni_spwcameraverify",
+    compile_multilib: "first",
+    product_specific: true,
+    srcs: [
+        "src/jniSpwCameraVerify.cpp",
+        "src/ImageFormat_Conversion.c",
+        "src/ReadCalibParam.c",
+    ],
+    local_include_dirs: [
+        "src/header",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libSpwCameraVerification",
+        "libopencv_java3",
+        "libsprd_yuvscaler",
+    ],
+    cflags: [
+        "-O3",
+        "-fvisibility=hidden",
+        "-mfloat-abi=softfp",
+        "-mfpu=neon",
+        "-pie",
+        "-fPIE",
+        "-DNDK",
+    ],
+    cppflags: [
+        "-fexceptions",
+    ],
+    ldflags: [
+        "-Wl,--gc-sections",
+        "-Wl,--strip-debug",
+        "-Wl,--no-fatal-warnings",
+        "-fvisibility=hidden",
+        "-fuse-ld=lld",
+    ],
+}
+
+cc_library_shared {
+    name: "libjni_wtcameracalibration",
+    compile_multilib: "first",
+    product_specific: true,
+    srcs: [
+        "src/jniWTCameraCalibration.cpp",
+        "src/ImageFormat_Conversion.c",
+        "src/ReadCalibParam.c",
+    ],
+    local_include_dirs: [
+        "src/header",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libWTCameraCalibration",
+        "libopencv_java3",
+        "libsprd_yuvscaler",
+    ],
+    cflags: [
+        "-O3",
+        "-fvisibility=hidden",
+        "-mfloat-abi=softfp",
+        "-mfpu=neon",
+        "-pie",
+        "-fPIE",
+        "-DNDK",
+    ],
+    cppflags: [
+        "-fexceptions",
+    ],
+    ldflags: [
+        "-Wl,--gc-sections",
+        "-Wl,--strip-debug",
+        "-Wl,--no-fatal-warnings",
+        "-fvisibility=hidden",
+        "-fuse-ld=lld",
+    ],
+}
+
+cc_library_shared {
+    name: "libjni_wtcameraverification",
+    compile_multilib: "first",
+    product_specific: true,
+    srcs: [
+        "src/jniWTCameraVerification.cpp",
+        "src/ImageFormat_Conversion.c",
+        "src/ReadCalibParam.c",
+    ],
+    local_include_dirs: [
+        "src/header",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libWTCameraVerification",
+        "libopencv_java3",
+        "libsprd_yuvscaler",
+    ],
+    cflags: [
+        "-O3",
+        "-fvisibility=hidden",
+        "-mfloat-abi=softfp",
+        "-mfpu=neon",
+        "-pie",
+        "-fPIE",
+        "-DNDK",
+    ],
+    cppflags: [
+        "-fexceptions",
+    ],
+    ldflags: [
+        "-Wl,--gc-sections",
+        "-Wl,--strip-debug",
+        "-Wl,--no-fatal-warnings",
+        "-fvisibility=hidden",
+        "-fuse-ld=lld",
+    ],
+}
+
+//stl3d calibration
+cc_library_shared {
+    name: "libjni_stl3dcameracalibration",
+    compile_multilib: "first",
+    product_specific: true,
+    srcs: [
+        "src/jniSTL3DCameraCalibration.cpp",
+        "src/ImageFormat_Conversion.c",
+        "src/ReadCalibParam.c",
+    ],
+    local_include_dirs: [
+        "src/header",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libcalibration3d",
+        "libopencv_java3",
+        "libsprd_yuvscaler",
+    ],
+    cflags: [
+        "-O3",
+        "-fvisibility=hidden",
+        "-mfloat-abi=softfp",
+        "-mfpu=neon",
+        "-pie",
+        "-fPIE",
+        "-DNDK",
+    ],
+    cppflags: [
+        "-fexceptions",
+    ],
+    ldflags: [
+        "-Wl,--gc-sections",
+        "-Wl,--strip-debug",
+        "-Wl,--no-fatal-warnings",
+        "-fvisibility=hidden",
+        "-fuse-ld=lld",
+    ],
+}
+
+//stl3d verification
+cc_library_shared {
+    name: "libjni_stl3dcameraverification",
+    compile_multilib: "first",
+    product_specific: true,
+    srcs: [
+        "src/jniSTL3DCameraVerify.cpp",
+        "src/ImageFormat_Conversion.c",
+        "src/ReadCalibParam.c",
+    ],
+    local_include_dirs: [
+        "src/header",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libCameraVerfication3d",
+        "libopencv_java3",
+        "libsprd_yuvscaler",
+    ],
+    cflags: [
+        "-O3",
+        "-fvisibility=hidden",
+        "-mfloat-abi=softfp",
+        "-mfpu=neon",
+        "-pie",
+        "-fPIE",
+        "-DNDK",
+    ],
+    cppflags: [
+        "-fexceptions",
+    ],
+    ldflags: [
+        "-Wl,--gc-sections",
+        "-Wl,--strip-debug",
+        "-Wl,--no-fatal-warnings",
+        "-fvisibility=hidden",
+        "-fuse-ld=lld",
+    ],
+}
